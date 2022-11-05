@@ -1,9 +1,9 @@
 [package]
 name = "night"
-version = "0.0.0"
-edition = "2018"
-authors = ["Muhan Xiao <syrupcake@protonmail.com>"]
-description = "Still under development, no content."
+version = "0.0.1"
+edition = "2021"
+authors = ["AX <syrupcake@protonmail.com>"]
+description = "A Scalable Distributed Task Scheduling Framework."
 license = "MIT/Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
