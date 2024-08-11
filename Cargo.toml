@@ -31,14 +31,6 @@ distributed = []
 name = "night"
 path = "src/lib.rs"
 
-[[example]]
-name = "simple_queue"
-path = "examples/simple_queue.rs"
-
-[[example]]
-name = "distributed_queue"
-path = "examples/distributed_queue.rs"
-
 [profile.release]
 opt-level = 3
 lto = true
