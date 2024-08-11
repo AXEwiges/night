@@ -3,10 +3,8 @@ name = "night"
 version = "0.0.2"
 edition = "2021"
 authors = ["AX <syrupcake@protonmail.com>"]
-description = "A Scalable Distributed Task Scheduling Framework."
+description = "A Scalable Distributed Task Queue."
 license = "MIT/Apache-2.0"
-keywords = ["task-queue", "distributed", "async"]
-categories = ["asynchronous", "concurrency", "database-implementations"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
