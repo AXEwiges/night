@@ -5,7 +5,6 @@ edition = "2021"
 authors = ["AX <syrupcake@protonmail.com>"]
 description = "A Scalable Distributed Task Scheduling Framework."
 license = "MIT/Apache-2.0"
-readme = "README.md"
 keywords = ["task-queue", "distributed", "async"]
 categories = ["asynchronous", "concurrency", "database-implementations"]
 
