@@ -45,7 +45,6 @@ pub struct Task {
     pub status: TaskStatus,
 }
 
-// 自定义序列化
 impl Serialize for Task {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
     where

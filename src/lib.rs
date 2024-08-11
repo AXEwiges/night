@@ -59,7 +59,6 @@ impl Night {
             concurrency,
         ));
 
-        // 使用阻塞操作初始化 executor
         tokio::task::block_in_place(|| {
             tokio::runtime::Handle::current().block_on(async {
                 *night.executor.write().await = Some(executor);
@@ -126,10 +125,8 @@ impl Night {
         let new_system = DistributedSystem::new(node);
         *distributed_system = Some(new_system);
 
-        // 克隆 Arc 以在新任务中使用
         let ds_clone = Arc::clone(&self.distributed_system);
 
-        // 启动服务器
         tokio::spawn(async move {
             loop {
                 let system = ds_clone.lock().await;
@@ -141,8 +138,8 @@ impl Night {
                 } else {
                     break;
                 }
-                drop(system); // 显式释放锁
-                tokio::time::sleep(std::time::Duration::from_secs(1)).await; // 避免过度循环
+                drop(system);
+                tokio::time::sleep(std::time::Duration::from_secs(1)).await;
             }
         });
 
