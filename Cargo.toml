@@ -3,6 +3,7 @@ name = "night"
 version = "0.0.3"
 edition = "2021"
 authors = ["AX <syrupcake@protonmail.com>"]
+readme = "README.md"
 description = "A Scalable Distributed Task Queue."
 license = "MIT/Apache-2.0"
 
